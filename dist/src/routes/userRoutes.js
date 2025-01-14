@@ -4,4 +4,5 @@ const express_1 = require("express");
 const userContoller_1 = require("../controllers/userContoller");
 const router = (0, express_1.Router)();
 router.get("/", userContoller_1.getUsers);
+router.post("/", userContoller_1.postUser);
 exports.default = router;
